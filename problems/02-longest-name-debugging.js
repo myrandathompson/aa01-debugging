@@ -9,10 +9,10 @@ have a length of 1 or greater.
 */
 
 function longestName(names) {
-  set currentLongest = names[1];
+  let currentLongest = names[1];
 
-  for (let i = 2 ; i <= names.Length ; i++) {
-    if (names[i].Length > currentLongest.Length) {
+  for (let i = 2 ; i < names.length ; i++) {
+    if (names[i].length > currentLongest.length) {
       currentLongest = names[i];
     }
   }
